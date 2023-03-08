@@ -15,8 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-// Route::resource('books', BooklistController::class);
-Route::resource('index', BooksController::class);
+Route::resource('/', BooksController::class);
